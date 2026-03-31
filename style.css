@@ -1,0 +1,200 @@
+* {
+	font-family: sans-serif;
+}
+
+:root {
+	--bg_color: #137a7f;
+	--highlighted_bg_color: #67f38a;
+	--div_bg_color: #86cecb;
+	--div_border_color: #373b3e;
+}
+
+hr {
+	color: var(--div_border_color);
+}
+
+a {
+	color: var(--div_bg_color);
+	background-color: var(--div_border_color);
+}
+
+p {
+	margin: 2px;
+	/* margin-top: 2px; */
+}
+
+/* .regular-link:hover { */
+a:hover {
+	color: #ffd966;
+	background-color: #342f1e;
+}
+
+.thread-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+}
+
+th {
+	text-align: left;
+}
+
+/* .thread-subject {
+	color: rgb(0, 80, 145);
+} */
+
+html {
+	background-color: var(--bg_color);
+}
+
+input[type='text'], textarea {
+	background-color: rgb(91, 180, 150);
+	color: black;
+}
+
+.option {
+	display: none;
+}
+
+ul {
+	padding-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 5px;
+}
+
+
+.thread-box {
+	background-color: var(--div_bg_color);
+	width: 185px;
+	max-width: 185px;
+	min-height: 230px;
+	max-height: fit-content;
+	border: 5px double var(--div_border_color);
+	padding: 0px 0px 0px 0px;
+	width: max-content;
+}
+
+
+
+.thread-box img {
+	width: 94%;
+	max-width: 94%;
+	height: auto;
+	padding: 0px 0px 0px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+	.thread-box {
+		width: 45vw;
+	}
+	.thread-box img {
+		max-width: 94%;
+		height: auto;
+		padding: 0px 0px 0px 0px;
+	}
+}
+
+/* make it so the float:left images will affect the size of the parent div */
+.reply-box {
+	overflow: auto;
+	margin-bottom: 1px;
+}
+
+.quote {
+	color: rgb(137, 46, 190);
+	
+}
+
+#name {
+	/* color: rgb(121, 121, 121); */
+}
+
+.reply-box, img {
+	background-color: var(--div_bg_color);
+	border: 5px double var(--div_border_color);
+	padding: 5px 5px 5px 5px;
+	/* 5px to account for padding */
+	/* width: max-content - 5px;  */
+	height: max-content;
+	width: fit-content;
+	max-width: 100vw;
+}
+
+.reply-box img {
+	margin: 5px;
+	float: left;
+	width: 200px;
+}
+
+.highlighted {
+	background-color: var(--highlighted_bg_color);
+	/* filter: saturate(100%); */
+}
+
+@media only screen and (max-width: 600px) {
+	.reply-box, img {
+		height: max-content;
+		max-width: 100vw;
+	}
+	.reply-box img {
+		margin: 5px;
+		float: left;
+		width: 35vw;
+	}
+}
+
+
+h1, h3, header, summary, .regular-heading {
+	margin: 5px 0px 5px 0px;
+	background-color: var(--div_bg_color);
+	border: 5px double var(--div_border_color);
+	padding: 5px 5px 5px 5px;
+	width: fit-content;
+	max-width: 100vw;
+}
+
+/* adjust for the summary tags padding-bottom  */ 
+/* there is probably a better way to fix this by adjusting
+summary margins */
+.display-order-form, .choose-a-board-heading {
+	margin-top: 0px;
+}
+
+.regular-subheading {
+	margin: 5px 0px 5px 0px;
+	background-color: var(--div_bg_color);
+	border: 5px var(--div_border_color);
+	border-style: outset;
+	padding: 5px 5px 5px 5px;
+	width: max-content;
+}
+
+table {
+	/* fix minor visual inconsistency */
+	margin-bottom: 5px;
+}
+
+table, td, th {
+	background-color: var(--div_bg_color);
+	border: 5px double var(--div_border_color);
+	padding: 5px 5px 5px 5px;
+	width: max-content;
+}
+
+.faded {
+	color: grey;
+}
+
+/* HOME PAGE */
+.boards-listing {
+	background-color: var(--div_bg_color);
+	border: 5px double var(--div_border_color);
+	width: min-content;
+	padding: 5px 5px 5px 5px;
+	/* margin: 2px 5px 2px 5px; */
+}
+
+.boards-listing p {
+	margin: 0px;
+}
