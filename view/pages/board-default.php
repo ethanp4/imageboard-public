@@ -31,7 +31,7 @@
 		echo "<hr>";
 		echo "<div class='regular-heading'><a title='currently viewing the $visible_replies most recent replies' class='regular-link' href=/gn/t/$thread_op->id>go to thread with <strong>$hidden_replies</strong> hidden replies -></a></div>";
 		foreach($thread['replies'] as $reply) {
-			include 'view/layouts/reply.php';
+			include 'view/user-generated/reply.php';
 		}
 		echo '<hr><hr><hr>';
 	}
